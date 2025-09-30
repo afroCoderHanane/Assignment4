@@ -1,0 +1,64 @@
+# Go binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.mod
+*.sum
+splitter/splitter
+mapper/mapper
+reducer/reducer
+
+# Go test binary
+*.test
+
+# Go coverage
+*.out
+
+# Go vendor directory
+vendor/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+
+# AWS credentials (never commit these!)
+.aws/
+credentials
+*.pem
+
+# Output files
+*.log
+*.json
+hamlet.txt
+performance_results.json
+hamlet_performance_results.json
+hamlet_mapreduce_performance.png
+
+# Temporary files
+*.tmp
+*.temp
+
+# Terraform (if you add it later)
+*.tfstate
+*.tfstate.*
+.terraform/

@@ -1,0 +1,16 @@
+FROM golang:1.25-alpine
+
+WORKDIR /app
+
+# Copy everything from mapper directory
+COPY . .
+
+# Download dependencies
+RUN go mod download
+
+# Build the application
+RUN go build -o mapper .
+
+EXPOSE 8080
+
+CMD ["./mapper"]
